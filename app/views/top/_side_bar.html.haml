@@ -1,0 +1,50 @@
+.side_bar
+
+  .side-header
+    .side-header__logo
+      .image
+        = image_tag"logo.png"
+
+  
+
+  .side-content
+    .side-content__list
+      %ul.side-content__list
+        %li.side-content__list__home
+          = link_to "#" do
+            ="HOME"
+        .cp_hr02
+
+        %li.side-content__list__lost-cat
+          = link_to "#" do  
+            ="迷い猫"
+        .cp_hr02
+
+        %li.side-content__list__Protected-cat
+          = link_to "#" do  
+            ="保護猫"
+        .cp_hr02
+
+        %li.side-content__list__chat-room
+          = link_to "#" do  
+            ="Chat Room"
+        .cp_hr02
+
+        %li.side-content__list__poster-create
+          = link_to "#" do  
+            ="ポスターを作る"
+        .cp_hr02
+
+    .link-icons
+      %ul.link-icons__icon
+        %li.link-icons__icon__fb
+          = link_to "#" do
+            =icon("fab",'facebook',class: 'icon')
+        %li.link-icons__icon__tw
+          = link_to "#" do 
+            =icon("fab",' fa-twitter-square',class: 'icon')     
+        %li.link-icons__icon__inst
+          = link_to "#" do
+            =icon("fab",'instagram',class: 'icon')
+
+    .login-form
