@@ -11,12 +11,12 @@
     .side-content__list
       %ul.side-content__list
         %li.side-content__list__home
-          = link_to "#" do
+          = link_to "/" do
             ="HOME"
         .cp_hr02
 
         %li.side-content__list__lost-cat
-          = link_to "#" do  
+          = link_to maigos_path do  
             ="迷い猫"
         .cp_hr02
 
@@ -38,13 +38,20 @@
     .link-icons
       %ul.link-icons__icon
         %li.link-icons__icon__fb
-          = link_to "#" do
+          = link_to "https://www.facebook.com/" do
             =icon("fab",'facebook',class: 'icon')
         %li.link-icons__icon__tw
-          = link_to "#" do 
+          = link_to "https://twitter.com/home" do 
             =icon("fab",' fa-twitter-square',class: 'icon')     
         %li.link-icons__icon__inst
-          = link_to "#" do
+          = link_to "https://www.instagram.com/toru5k/" do
             =icon("fab",'instagram',class: 'icon')
 
     .login-form
+      %ul.login-form__box
+        %li.login-form__box__user-name
+          = current_user.name 
+          さん
+        %li.side-header__box__sign-in
+          = link_to edit_user_path(current_user) do
+            =icon('fas', 'cog', class: 'icon')

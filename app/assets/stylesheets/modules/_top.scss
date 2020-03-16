@@ -72,7 +72,31 @@
           color: white;
         }
       }
-    }
+      .login-form{
+        text-decoration: none;
+        color: white;
+        li {
+          display: inline;
+          text-decoration: none;
+          text-align: center;
+          padding: 0 10px 0;
+        a{
+          text-decoration: none;
+          }
+        }
+        .user-name{
+          font-size: 15px;
+          margin-bottom: 5px;
+          color: white;
+          }
+          
+        .i{
+          font-size: 1.5em;
+          color: white;
+          }
+          
+      }
+    }   
   }
 // ====ここまでサイド＝＝＝＝
 
@@ -143,6 +167,90 @@
         }
       }
     }
+
+
+    // ここから迷い猫ページ仮
+  
+
+  .maigo_top{
+    height: 100vh;
+    width: calc(100% - 280px);
+    float: left;
+    background-color:white;
+    overflow: scroll;
+    overflow: hidden visible;
+    
+    .header-mayoineko{
+      height: 100px;
+      width: 100%;
+      background-color: pink;
+      align-items: center;
+      text-align: center;
+      line-height: 100px;
+      font-size: 20px;
+      color: brown;
+
+      }
+
+    .content-maigo{
+      height:100vh;
+      max-width: 100%;
+      margin: 20px;
+      .maigo-data{ 
+        height:451px ;
+        width: 380px;
+        margin: 20px;
+        border: solid 1px darkgray; 
+        font-size: 15px;
+        text-align: left;
+        float: left;
+        background-color: whitesmoke;
+
+
+        margin: 30px;
+          &__image{
+            height: 251px;
+            max-width:auto;
+            
+            text-align: center;
+            line-height: 250px;
+          }
+          &__name{
+            height: 20px;
+            border-bottom: dashed  1px darkgray;
+          }
+          &__age{
+            height: 20px;
+            border-bottom: dashed  1px darkgray;
+          }
+          &__sex{
+            height: 20px;
+            border-bottom: dashed  1px darkgray;
+          }
+          &__address{
+            height: 20px;
+            border-bottom: dashed  1px darkgray;
+          }
+          &__content{
+            height: 98px;
+            font-size: 13px;
+            border-bottom: dashed  1px darkgray;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            
+          }
+          &__user-name{
+            height: 20px;
+            margin-bottom: 20px;
+            
+          }
+      }
+    }
+    .maigo-new-page
+    .header-mayoineko
+  
   
   .footer{
     height: 25px;
@@ -151,7 +259,7 @@
     text-align: center;
     background-color: black;
     color: #fff;
-
     bottom: 0;
     }
+  }
 }
