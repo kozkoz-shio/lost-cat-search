@@ -5,6 +5,7 @@ class MaigosController < ApplicationController
   # GET /maigos.json
   def index
     @maigos = Maigo.all
+    # @maigo = Maigo.edit(maigo_params)
   end
 
   # GET /maigos/1

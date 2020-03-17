@@ -1,7 +1,9 @@
-%h1 Editing maigo
+Editing maigo
 
-= render 'form'
+  =form_for(model: @tweet, local: true) do |form| %>
+      <h3>
+        編集する
+      </h3>
+      = render partial: "form", locals: { form: form } 
 
-= link_to 'Show', @maigo
-\|
 = link_to 'Back', maigos_path

@@ -170,8 +170,6 @@
 
 
     // ここから迷い猫ページ仮
-  
-
   .maigo_top{
     height: 100vh;
     width: calc(100% - 280px);
@@ -243,15 +241,12 @@
           }
           &__user-name{
             height: 20px;
-            margin-bottom: 20px;
-            
+            margin-bottom: 20px; 
           }
       }
     }
-    .maigo-new-page
-    .header-mayoineko
-  
-  
+    
+  }
   .footer{
     height: 25px;
     width: 100%;
@@ -261,5 +256,4 @@
     color: #fff;
     bottom: 0;
     }
-  }
 }

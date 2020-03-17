@@ -4,8 +4,10 @@
 
   = link_to '新しく迷い猫を登録', new_maigo_path
 
-  .content-maigo
+  -# = link_to 'Edit', edit_path(@maigo)
 
+
+  .content-maigo
     .maigo-data
       - @maigos.each do |maigo|
         .maigo-data__image
@@ -30,4 +32,6 @@
           飼い主さん：
           = maigo.user.name
   
-  .footer
+
+  -# .footer
+  -#   ©2020- Lost Cat Search / produced by koz
