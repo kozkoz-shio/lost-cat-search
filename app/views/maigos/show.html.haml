@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Image:
+  = @maigo.image
+%p
+  %b Name:
+  = @maigo.name
+%p
+  %b Age:
+  = @maigo.age
+%p
+  %b Sex:
+  = @maigo.sex
+%p
+  %b Address:
+  = @maigo.address
+%p
+  %b Content:
+  = @maigo.content
+
+= link_to 'Edit', edit_maigo_path(@maigo)
+\|
+= link_to 'Back', maigos_path
