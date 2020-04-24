@@ -1,37 +1,33 @@
 .maigo_top
   .header-mayoineko
     迷い猫
-
   = link_to '新しく迷い猫を登録', new_maigo_path
-
   -# = link_to 'Edit', edit_path(@maigo)
 
-
   .content-maigo
-    .maigo-data
-      - @maigos.each do |maigo|
-        .maigo-data__image
-          = image_tag maigo.image.url, class: 'maigo-data__image__image' if maigo.image.present?
-        .maigo-data__name
-          お名前:
-          = maigo.name
-        .maigo-data__age
-          年齢：
-          = maigo.age
-          　才
-        .maigo-data__sex
-          性別：
-          = maigo.sex
-        .maigo-data__address
-          住所：
-          = maigo.address
-        .maigo-data__content
-          特記事項、特徴：
-          = maigo.content
-        .maigo-data__user-name
-          飼い主さん：
-          = maigo.user.name
-  
+    - @maigos.each do |maigo|
+      = link_to maigo_path(maigo.id) do
+        .maigo-data
+          .maigo-data__image
+            = image_tag maigo.image.url, class: 'maigo-data__image__image' if maigo.image.present?
+          .maigo-data__name
+            お名前：
+            = maigo.name
+          .maigo-data__age
+            年齢：
+            = maigo.age
+            才
+          .maigo-data__sex
+            性別：
+            = maigo.sex
+          .maigo-data__address
+            住所：
+            = maigo.address
+          .maigo-data__content
+            特記事項、特徴：
+            = maigo.content
+          .maigo-data__user-name
+            飼い主さん：
+            = maigo.user.name
+    
 
-  -# .footer
-  -#   ©2020- Lost Cat Search / produced by koz
