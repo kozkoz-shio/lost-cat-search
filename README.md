@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 迷子猫検索用アプリ
+主要機能（予定含）
+* 画像投稿機能
+* GoogleMap API利用による地図の範囲指定機能
+* ポスター簡易作成機能 
+* チャット機能
 
-Things you may want to cover:
+##  開発環境
+* Ruby
+* VScode
 
-* Ruby version
 
-* System dependencies
+# lost cat search DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false, unique: true, index: true|
+|password|string|null: false|
+### Association
+- has_many :maigos
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## maigoテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|image|string|null: false|
+|age|integer|null: false|
+|sex|string|null: false|
+|address|string|null: false|
+|content|string|null: false|
+|user_id|integer|null: false|
+### Association
+- blongs_to :user
