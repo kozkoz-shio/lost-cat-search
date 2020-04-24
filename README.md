@@ -5,7 +5,6 @@
 * 画像投稿機能
 * GoogleMap API利用による地図の範囲指定機能
 * ポスター簡易作成機能 
-* チャット機能
 
 ##  開発環境
 * Ruby
@@ -33,4 +32,14 @@
 |content|string|null: false|
 |user_id|integer|null: false|
 ### Association
-- blongs_to :user
+- belongs_to :user
+
+## commentテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|string|null: false|
+|user_id|integer|null: false|
+|maigo_id|integer|null: false|
+### Association
+- belongs_to :user
+- belongs_to :maigo
