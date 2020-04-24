@@ -11,7 +11,7 @@
 * VScode
 
 
-# lost cat search DB設計
+# DB設計
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -21,7 +21,7 @@
 ### Association
 - has_many :maigos
 
-## maigoテーブル
+## maigosテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -34,7 +34,7 @@
 ### Association
 - belongs_to :user
 
-## commentテーブル
+## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|string|null: false|
