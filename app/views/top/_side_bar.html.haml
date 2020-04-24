@@ -5,8 +5,6 @@
       .image
         = image_tag"logo.png"
 
-  
-
   .side-content
     .side-content__list
       %ul.side-content__list
@@ -18,11 +16,6 @@
         %li.side-content__list__lost-cat
           = link_to maigos_path do  
             ="迷い猫"
-        .cp_hr02
-
-        %li.side-content__list__Protected-cat
-          = link_to "#" do  
-            ="保護猫"
         .cp_hr02
 
         %li.side-content__list__chat-room
@@ -41,10 +34,10 @@
           = link_to "https://www.facebook.com/" do
             =icon("fab",'facebook',class: 'icon')
         %li.link-icons__icon__tw
-          = link_to "https://twitter.com/home" do 
+          = link_to "https://twitter.com" do 
             =icon("fab",' fa-twitter-square',class: 'icon')     
         %li.link-icons__icon__inst
-          = link_to "https://www.instagram.com/toru5k/" do
+          = link_to "https://www.instagram.com" do
             =icon("fab",'instagram',class: 'icon')
 
     .login-form
