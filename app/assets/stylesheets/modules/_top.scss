@@ -20,8 +20,7 @@
       width: 100%;
       align-items: center;
       position: relative;
-
-      .side-header__logo{
+      &__logo{
         height: 150px;
         width: 100%;
         position: absolute;
@@ -43,6 +42,16 @@
           a{
             text-decoration: none;
             color: white;
+            display: inline-block;
+            transition: .3s;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+          a:hover {
+            -webkit-transform: scale(1.1);
+            transform: rotate(5deg);
+            color: pink;
+            font-weight: bold;
           }
 
         .cp_hr02 {
@@ -129,8 +138,8 @@
       .intro-title{
         margin-bottom: 20px;
         .comment{
-          line-height: 2em;
-          margin-bottom: 20px;
+          line-height: 3em;
+          margin-bottom: 40px;
       }
       }
       }
