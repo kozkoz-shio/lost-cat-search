@@ -4,27 +4,32 @@
  
   .maigo_top
     .header-mayoineko
-    .maigo-edit
-      %p
-        %b Image:
-        = @maigo.image
-      %p
-        %b Name:
-        = @maigo.name
-      %p
-        %b Age:
-        = @maigo.age
-      %p
-        %b Sex:
-        = @maigo.sex
-      %p
-        %b Address:
-        = @maigo.address
-      %p
-        %b Content:
-        = @maigo.content
-
-      = link_to 'Edit', edit_maigo_path(@maigo)
-      \|
-      = link_to 'Back', maigos_path
-    
+      探しています
+    .show-mayoineko
+      .content-box
+        .maigo-show
+          .maigo-show_image
+            = image_tag @maigo.image.url
+          .maigo-show__name
+            お名前：
+            = @maigo.name
+          .maigo-show__age
+            年齢：
+            = @maigo.age
+            才
+          .maigo-show__sex
+            性別：
+            = @maigo.sex
+          .maigo-show__address
+            住所：
+            = @maigo.address
+          .maigo-show__content
+            特記事項、特徴：
+            = @maigo.content
+          .maigo-show__user-name
+            飼い主さん：
+            = @maigo.user.name
+        .ext-box
+          = link_to '編集する', edit_maigo_path(@maigo)
+          = link_to '削除する', maigo_path(@maigo), method: :delete
+          = link_to '元のページに戻る', maigos_path

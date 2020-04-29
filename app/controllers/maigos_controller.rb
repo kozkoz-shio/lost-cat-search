@@ -11,6 +11,9 @@ class MaigosController < ApplicationController
   # GET /maigos/1
   # GET /maigos/1.json
   def show
+    @maigo = Maigo.find(params[:id])
+    @items = Maigo.all
+    
   end
 
   # GET /maigos/new

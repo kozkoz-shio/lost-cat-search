@@ -67,11 +67,67 @@
     }
       
     // ----迷子new---
-    .field{
-      &__input{
-          height: 40px;
-          width: 80px;
+      .field{
+        &__input{
+            height: 40px;
+            width: 80px;
+        }
       }
-    }
+
+    // -----迷子show-----
+    .show-mayoineko
+      .content-box{
+        margin: 20px;
+        .maigo-show{
+          width: 100%;
+          border: solid 1px darkgray; 
+          font-size: 15px;
+          text-align: left;
+          float: left;
+          background-color: whitesmoke;
+
+            &__image{
+              height: 280px;
+              max-width:auto;
+              
+              line-height: 250px;
+              img {
+                width: 100%;
+                height: 280px;
+                object-fit: cover;
+                text-align: center;
+              }
+            }
+            &__name{
+              height: 20px;
+              border-bottom: dashed  1px darkgray;
+            }
+            &__age{
+              height: 20px;
+              border-bottom: dashed  1px darkgray;
+            }
+            &__sex{
+              height: 20px;
+              border-bottom: dashed  1px darkgray;
+            }
+            &__address{
+              height: 20px;
+              border-bottom: dashed  1px darkgray;
+            }
+            &__content{
+              font-size: 13px;
+              border-bottom: dashed  1px darkgray;
+            }
+            &__user-name{
+            }
+        }
+        .ext-box{
+          height: 100px;
+          width: 100%;
+          align-items: center;
+          display: block;
+        }
+      }
+
   }
 }
