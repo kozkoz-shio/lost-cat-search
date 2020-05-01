@@ -1,9 +1,10 @@
 .maigo_top
   .header-mayoineko
     迷い猫
-  = link_to '新しく迷い猫を登録', new_maigo_path
-  -# = link_to 'Edit', edit_path(@maigo)
-
+  .maigo-reg 
+    .btn
+      = link_to '猫を登録', new_maigo_path
+      
   .content-maigo
     - @maigos.each do |maigo|
       = link_to maigo_path(maigo.id) do
