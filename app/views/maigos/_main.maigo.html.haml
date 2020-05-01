@@ -24,10 +24,16 @@
             住所：
             = maigo.address
           .maigo-data__content
-            特記事項、特徴：
+            失踪日、特徴など：
+
             = maigo.content
           .maigo-data__user-name
             飼い主さん：
             = maigo.user.name
     
-
+  .page_top
+    = link_to "#" do
+      .page_top__text
+        TOPに戻る
+      .page_top__icon
+        = icon("fas",'fa-angle-double-up',class: 'icon')
