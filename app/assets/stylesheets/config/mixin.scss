@@ -20,3 +20,14 @@
   background-color: $backgroundcolor2;
   color: #fff;
 }
+@mixin form{
+  height: 30px;
+  width: 300px;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+@mixin date-layout{
+  height: 20px;
+  border-bottom: dashed  1px $darkgray;
+}

@@ -28,10 +28,10 @@
           .maigo-show__user-name
             飼い主さん：
             = @maigo.user.name
-        .ext-box
-        - if user_signed_in? && current_user.id == @maigo.user_id
-          = link_to '編集する', edit_maigo_path(@maigo)
-          = link_to '削除する', maigo_path(@maigo), method: :delete
-          = link_to '元のページに戻る', maigos_path
-        - else
-          = link_to '元のページに戻る', maigos_path
+      .ext-box
+      - if user_signed_in? && current_user.id == @maigo.user_id
+        = link_to '編集する', edit_maigo_path(@maigo)
+        = link_to '削除する', maigo_path(@maigo), method: :delete
+        = link_to '元のページに戻る', maigos_path
+      - else
+        = link_to '元のページに戻る', maigos_path

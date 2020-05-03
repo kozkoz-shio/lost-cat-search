@@ -1,14 +1,14 @@
 .wrapper{
   .maigo_top{
     width: calc(100% - 280px);
-    background-color:white;
+    background-color:$white;
     overflow: scroll;
     overflow: hidden visible;
 
     .header-mayoineko{
       height: 100px;
       width: 100%;
-      background-color: pinkye;
+      background-color: pink;
       align-items: center;
       text-align: center;
       line-height: 100px;
@@ -18,20 +18,22 @@
       }
       
     .maigo-reg{
+      display: flex;
+      justify-content: center;
       .btn{
         a{
           color:pink;
           text-decoration: none;
           transition: 0.5s;
           display: inline-block;
-          background: white;
+          background: $white;
           border: solid 1px pink;
           font-size: 20px;
           line-height: 1em;
           padding: 12px 40px; 
         }
         a:hover {
-          color:white;
+          color:$white;
           background-color: pink;
         }
       }
@@ -53,7 +55,7 @@
       
       .maigo-data{ 
         width: 300px;
-        border: solid 1px darkgray; 
+        border: solid 1px $darkgray; 
         font-size: 15px;
         text-align: left;
         float: left;
@@ -70,25 +72,21 @@
             }
           }
           &__name{
-            height: 20px;
-            border-bottom: dashed  1px darkgray;
+            @include date-layout;
           }
           &__age{
-            height: 20px;
-            border-bottom: dashed  1px darkgray;
+            @include date-layout;
           }
           &__sex{
-            height: 20px;
-            border-bottom: dashed  1px darkgray;
+            @include date-layout;
           }
           &__address{
-            height: 20px;
-            border-bottom: dashed  1px darkgray;
+            @include date-layout;
           }
           &__content{
             height: 98px;
             font-size: 13px;
-            border-bottom: dashed  1px darkgray;
+            border-bottom: dashed  1px $darkgray;
             overflow: hidden;
             display: -webkit-box;
             -webkit-box-orient: vertical;
@@ -98,22 +96,14 @@
           }
       }
     }
-      
-    // ----迷子new---
-      .field{
-        &__input{
-            height: 40px;
-            width: 80px;
-        }
-      }
 
     // -----迷子show-----
-    .show-mayoineko
+    .show-mayoineko{
       .content-box{
         margin: 20px;
         .maigo-show{
           width: 100%;
-          border: solid 1px darkgray; 
+          border: solid 1px $darkgray; 
           font-size: 15px;
           text-align: left;
           float: left;
@@ -130,24 +120,20 @@
               }
             }
             &__name{
-              height: 20px;
-              border-bottom: dashed  1px darkgray;
+              @include date-layout;
             }
             &__age{
-              height: 20px;
-              border-bottom: dashed  1px darkgray;
+              @include date-layout;
             }
             &__sex{
-              height: 20px;
-              border-bottom: dashed  1px darkgray;
+              @include date-layout;
             }
             &__address{
-              height: 20px;
-              border-bottom: dashed  1px darkgray;
+              @include date-layout;
             }
             &__content{
               font-size: 13px;
-              border-bottom: dashed  1px darkgray;
+              border-bottom: dashed  1px $darkgray;
             }
             &__user-name{
             }
@@ -159,7 +145,7 @@
           display: block;
         }
       }
-      .page_top{
+      .page_top_btn{
         background: pink;
         height: 60px;
         width: 60px;
@@ -172,7 +158,7 @@
         z-index: 100;
         a{
         text-decoration: none;
-        color: white;
+        color: $white;
         }
         &__text{
           padding: 0 0 10px 0;
@@ -182,5 +168,6 @@
           width: 54px;
         }
       }
+    }
   }
 }
