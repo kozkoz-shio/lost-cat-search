@@ -33,24 +33,23 @@
         a:hover {
           color:white;
           background-color: pink;
-
-      
         }
-    }}
-     
+      }
+    }
+
     .content-maigo{
       a{
         color: black;
-          display: inline-block;
-          transition: .3s;
-          -webkit-transform: scale(1);
-          transform: scale(1);
+        display: inline-block;
+        transition: .3s;
+        -webkit-transform: scale(1);
+        transform: scale(1);
         }
-        a:hover {
-          -webkit-transform: scale(1.1);
-          transform: rotate(5deg);
-          font-weight: bold;
-        }
+      a:hover {
+        -webkit-transform: scale(1.1);
+        transform: rotate(5deg);
+        font-weight: bold;
+      }
       
       .maigo-data{ 
         width: 300px;
@@ -96,7 +95,6 @@
             -webkit-line-clamp: 5;
           }
           &__user-name{
-
           }
       }
     }
@@ -129,7 +127,6 @@
               justify-content: center;
               img {
                 object-fit: cover;
- 
               }
             }
             &__name{

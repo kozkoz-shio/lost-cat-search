@@ -1,10 +1,12 @@
 @import "reset";
 @import "config/colors";
-@import "modules/top";
-@import "modules/side";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "config/mixin";
+@import "config/flash";
+@import "modules/top";
+@import "modules/side";
 @import "modules/user";
 @import "modules/maigo";
 @import "modules/form";
-@import "config/flash";
+

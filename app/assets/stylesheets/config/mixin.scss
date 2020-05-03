@@ -1,0 +1,11 @@
+@mixin box-optional-or-required($backgroundcolor: #ff0211) {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4em;
+  padding: 0 4px;
+  margin: 0 0 0 8px;
+  border-radius: 2px;
+  background-color: $backgroundcolor;
+  color: #fff;
+}

@@ -18,5 +18,9 @@
     .field{
     line-height: em;
     margin-bottom: 20px;
+      span {
+        @include box-optional-or-required;
+      } 
     }
+    
   }
