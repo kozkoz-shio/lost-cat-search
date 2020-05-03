@@ -9,37 +9,38 @@
           - @maigo.errors.full_messages.each do |message|
             %li= message
     フォーム内容
-    .field__input
-      = f.label :image do
-        = f.label :画像
-        = icon('fas', 'image', class: 'icon')
-        = f.file_field :image, class: 'hidden'
-      %span
-        必須
-    .field__input
-      = f.label :名前
-      = f.text_field :name,placeholder: '猫の名前を入力', class: 'm-form'
-      %span
-        必須
-    .field__input
-      = f.label :年齢
-      = f.number_field :age,placeholder: '半角数字で入力', class: 'm-form'
-    .field__input
-      = f.label :性別
-      = f.text_field :sex,placeholder: 'オス、メス（去勢の有無）', class: 'm-form'
-    .field__input
-      = f.label :場所
-      = f.text_field :address,placeholder: '○○市番地付近など失踪場所', class: 'm-form'
-      %span
-        必須
-    .field__input
-      = f.label :備考
-      = f.text_area :content,placeholder: '失踪日、特徴', class: 'm-form2'
-      %span
-        必須
-      
-    .actions
-      = f.submit 'Save', class: 'm-submit'
+    .form-box
+      .field__input
+        = f.label :image do
+          = f.label :画像
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+        %span
+          必須
+      .field__input
+        = f.label :名前
+        = f.text_field :name,placeholder: '猫の名前を入力', class: 'm-form'
+        %span
+          必須
+      .field__input
+        = f.label :年齢
+        = f.number_field :age,placeholder: '半角数字で入力', class: 'm-form'
+      .field__input
+        = f.label :性別
+        = f.text_field :sex,placeholder: 'オス、メス（去勢の有無）', class: 'm-form'
+      .field__input
+        = f.label :場所
+        = f.text_field :address,placeholder: '○○市番地付近など失踪場所', class: 'm-form'
+        %span
+          必須
+      .field__input
+        = f.label :備考
+        = f.text_area :content,placeholder: '失踪日、特徴', class: 'm-form2'
+        %span
+          必須
+        
+      .actions
+        = f.submit 'Save', class: 'm-submit'
 
 
     = link_to 'Topに戻る', maigos_path
