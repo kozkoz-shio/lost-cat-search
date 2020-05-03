@@ -1,4 +1,4 @@
-@mixin box-optional-or-required($backgroundcolor: #ff0211) {
+@mixin box-optional-or-required($backgroundcolor: #ff0210) {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
@@ -7,5 +7,16 @@
   margin: 0 0 0 8px;
   border-radius: 2px;
   background-color: $backgroundcolor;
+  color: #fff;
+}
+@mixin box-optional-or-optional($backgroundcolor2: skyblue){
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4em;
+  padding: 0 4px;
+  margin: 0 0 0 8px;
+  border-radius: 2px;
+  background-color: $backgroundcolor2;
   color: #fff;
 }

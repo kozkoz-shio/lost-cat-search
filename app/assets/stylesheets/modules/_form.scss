@@ -15,9 +15,11 @@
     color: brown;
   }
   .form-box{
-    
     span {
       @include box-optional-or-required;
+    } 
+    span_2 {
+      @include box-optional-or-optional;
     } 
 
     .m-form{
@@ -32,6 +34,12 @@
       width: 300px;
       line-height: 1em;
       margin-bottom: 20px;
+    }
+    .m-submit{
+      background: pink;
+      height: 35px;
+      width: 150px;
+      border-radius:5px;
     }
   }
 }
