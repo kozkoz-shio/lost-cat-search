@@ -46,7 +46,7 @@ class MaigosController < ApplicationController
   def update
     respond_to do |format|
       if @maigo.update(maigo_params)
-        format.html { redirect_to @maigo, notice:  'を更新しました' }
+        format.html { redirect_to @maigo, notice:  '迷子情報を更新しました' }
         format.json { render :show, status: :ok, location: @maigo }
       else
         format.html { render :edit }

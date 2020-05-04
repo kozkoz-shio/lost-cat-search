@@ -99,10 +99,14 @@
 
     // -----迷子show-----
     .show-mayoineko{
+      align-items: center;
+      width: 100%;
       .content-box{
-        margin: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 40px;
         .maigo-show{
-          width: 100%;
+          max-width: 600px;
           border: solid 1px $darkgray; 
           font-size: 15px;
           text-align: left;
@@ -137,14 +141,21 @@
             }
             &__user-name{
             }
-        }
-        .ext-box{
+            .ext-box{
           height: 100px;
           width: 100%;
           align-items: center;
           display: block;
+          text-align: center;
         }
+        a{
+          text-decoration: none;
+          color: blue;
+        }
+        }
+        
       }
+    
       .page_top_btn{
         background: pink;
         height: 60px;

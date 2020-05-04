@@ -36,7 +36,9 @@
         = f.text_area :content,required: true,placeholder: '失踪日、特徴', class: 'm-form2'
         %span
           必須
-        
+      .actions
+        = f.submit '登録', class: 'm-submit'
+
 
 
   = link_to 'トップページに戻る', maigos_path
