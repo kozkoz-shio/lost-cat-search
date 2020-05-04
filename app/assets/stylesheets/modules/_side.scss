@@ -7,9 +7,7 @@
   text-align: center;
 
   .side-header{
-    height: 150px;
-    width: 100%;
-    align-items: center;
+    height: 170px;
     position: relative;
     &__logo{
       height: 150px;
@@ -20,10 +18,7 @@
     }
   }
   .side-content{
-    height: calc(100% - 150px);
-    width: 100%;
     padding: 40px;
-  
       &__list{
         font-size: 18px;
       }

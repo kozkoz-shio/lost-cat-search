@@ -4,7 +4,7 @@ class MaigosController < ApplicationController
   # GET /maigos
   # GET /maigos.json
   def index
-    @maigos = Maigo.all
+    @maigos = Maigo.all.order(created_at: :desc)
     # @maigo = Maigo.edit(maigo_params)
   end
 
@@ -32,7 +32,7 @@ class MaigosController < ApplicationController
 
     respond_to do |format|
       if @maigo.save
-        format.html { redirect_to @maigo, notice: 'Maigo was successfully created.' }
+        format.html { redirect_to @maigo, notice: '迷子の登録が出来ました' }
         format.json { render :show, status: :created, location: @maigo }
       else
         format.html { render :new }
@@ -46,7 +46,7 @@ class MaigosController < ApplicationController
   def update
     respond_to do |format|
       if @maigo.update(maigo_params)
-        format.html { redirect_to @maigo, notice:  'を更新しました' }
+        format.html { redirect_to @maigo, notice:  '迷子情報を更新しました' }
         format.json { render :show, status: :ok, location: @maigo }
       else
         format.html { render :edit }
@@ -60,7 +60,7 @@ class MaigosController < ApplicationController
   def destroy
     @maigo.destroy
     respond_to do |format|
-      format.html { redirect_to maigos_url, notice: 'Maigo was successfully destroyed.' }
+      format.html { redirect_to maigos_url, notice: '迷子情報の削除が完了しました' }
       format.json { head :no_content }
     end
   end

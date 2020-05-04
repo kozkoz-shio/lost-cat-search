@@ -1,22 +1,57 @@
-  .maigo_top{
-    height: 100vh;
+.form_top{
+  width: 100%;
+  background-color:white;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+  .header-form{
+    height: 100px;
     width: 100%;
-    background-color:white;
+    background-color: pink;
+    align-items: center;
     text-align: center;
-    
-    .header-mayoineko{
-      height: 100px;
-      width: 100%;
-      background-color: pink;
-      align-items: center;
-      text-align: center;
-      line-height: 100px;
-      font-size: 20px;
-      color: brown;
-      }
+    line-height: 100px;
+    font-size: 20px;
+    color: brown;
+  }
+  .form-box{
+    margin:50px;
+    span {
+      @include box-optional-or-required;
+    } 
+    span_2 {
+      @include box-optional-or-optional;
+    } 
+    .hidden{
+      @include form;
+    }
+    .m-form{
+      @include form;
+    }
 
-    .field{
-    line-height: em;
-    margin-bottom: 20px;
+    .m-form2{
+      height: 300px;
+      width: 300px;
+      line-height: 1em;
+      margin-bottom: 20px;
+    }
+    .m-submit{
+      background: #333;
+      color: $white;
+      height: 35px;
+      width: 150px;
+      border-radius:5px;
+    }
+    .exit-box{
+      margin: 10px;
+      a{
+        @include black-btn
+      }
+      a:hover {
+        @include black-btn-a;
+      }
     }
   }
+}
