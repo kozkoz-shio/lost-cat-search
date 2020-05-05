@@ -1,5 +1,6 @@
 class MaigosController < ApplicationController
   before_action :set_maigo, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only:[:create,:edit,:update,:destroy]
 
   # GET /maigos
   # GET /maigos.json
@@ -18,6 +19,7 @@ class MaigosController < ApplicationController
 
   # GET /maigos/new
   def new
+    flash[:notice] = "※登録ユーザーのみ新規登録が可能です。ログインしてください。" unless user_signed_in?
     @maigo = Maigo.new
   end
 
