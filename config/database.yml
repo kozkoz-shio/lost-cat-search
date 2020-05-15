@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: lost-cat-search_production
-  username: lost-cat-search
-  password: <%= ENV['LOST-CAT-SEARCH_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
