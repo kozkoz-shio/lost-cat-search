@@ -1,6 +1,6 @@
 .form_top{
   width: 100%;
-  background-color:white;
+  background-color:$white;
   text-align: center;
   a{
     text-decoration: none;
@@ -9,12 +9,12 @@
   .header-form{
     height: 100px;
     width: 100%;
-    background-color: pink;
+    background-color: $black;
     align-items: center;
     text-align: center;
     line-height: 100px;
     font-size: 20px;
-    color: brown;
+    color: $white;
   }
   .form-box{
     margin:50px;
