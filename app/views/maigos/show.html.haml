@@ -34,3 +34,29 @@
           = link_to '戻る', maigos_path
         - else
           = link_to '戻る', maigos_path
+          
+        .commentContainer
+          .commentContainer__comments
+            %h4＜コメント一覧＞
+            - if @comments.presence
+              - @comments.each do |comment|
+                .commentContainer__comments__name
+                  = comment.user.name
+                  = comment.created_at.strftime("%Y年%m月%d日 %H時%M分")
+                  
+                .commentContainer__comments__comment
+                  = comment.text
+                  
+            - else
+              = "コメントはありません"
+      
+            .commentContainer__form
+              - if current_user
+                = form_for [@maigo,@comment] do |f|
+                  .field__input
+                    = f.label :コメント投稿
+                    = f.text_area :text,required: true,placeholder: '※発言の責任は投稿者が負うものとし、名誉棄損など内容により法的処置を行う場合があります。', class: 'comment-box'
+                    .actions
+                      = f.submit "コメントする", class: "comment-btn"
+              - else
+                = link_to "コメントの投稿には新規登録/ログインが必要です", new_user_session_path

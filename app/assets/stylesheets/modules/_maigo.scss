@@ -89,6 +89,7 @@
 
     // -----迷子show-----
     .show-mayoineko{
+      width: 100%;
       align-items: center;
       display: flex;
       justify-content: center;
@@ -137,7 +138,7 @@
         a:hover {
           @include black-btn-a;
         }
-
+        
         .commentContainer{
           &__comments{
             width: 600px;
@@ -166,6 +167,7 @@
                 height: 35px;
                 width: 150px;
                 border-radius:5px;
+
               }
             }
           }
