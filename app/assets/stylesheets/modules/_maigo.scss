@@ -137,6 +137,39 @@
         a:hover {
           @include black-btn-a;
         }
+
+        .commentContainer{
+          &__comments{
+            width: 600px;
+            padding: 30px;
+              &__name{
+                background-color: skyblue;
+              }
+              &__comment{
+                max-width: 600px;
+                text-align: center;
+                word-wrap: break-word;
+                margin-bottom: 20px;
+              }
+          }
+          &__form{
+            margin-top: 30px;
+            .comment-box{
+              width: 100%;
+              padding: 10px;
+              border: 1px solid $light_gray;
+            }
+            .actions{
+              .comment-btn{
+                background: #333;
+                color: $white;
+                height: 35px;
+                width: 150px;
+                border-radius:5px;
+              }
+            }
+          }
+        }
       }
     }
     .page_top_btn{
