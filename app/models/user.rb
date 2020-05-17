@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
 
   has_many :maigo
+  has_many :comments
 
   validates :name, presence: true, uniqueness: true
 end
