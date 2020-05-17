@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   root 'top#index'
   resources :users, only: [:edit, :update,:show]
   resources :maigos
+  resources :maigos do
+    resources :comments, only: :create
+  end
   
 end

@@ -14,7 +14,8 @@ class MaigosController < ApplicationController
   def show
     @maigo = Maigo.find(params[:id])
     @items = Maigo.all
-    
+    @comment = Comment.new
+    @comments = @maigo.comments.includes(:user)
   end
 
   # GET /maigos/new
